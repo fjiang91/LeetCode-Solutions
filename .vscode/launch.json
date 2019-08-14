@@ -8,7 +8,7 @@
       "type": "node",
       "request": "launch",
       "name": "Launch Program",
-      "program": "${workspaceFolder}/91.decode-ways.js"
+      "program": "${workspaceFolder}/127.word-ladder.js"
     }
   ]
 }
