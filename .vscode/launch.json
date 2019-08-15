@@ -5,11 +5,12 @@
   "version": "0.2.0",
   "configurations": [
 
+
     {
       "type": "node",
       "request": "launch",
       "name": "Launch Program",
-      "program": "${workspaceFolder}/430.flatten-a-multilevel-doubly-linked-list.js"
+      "program": "${workspaceFolder}/973.k-closest-points-to-origin.js"
     }
   ]
 }
