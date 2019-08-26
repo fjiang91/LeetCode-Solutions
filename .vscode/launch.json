@@ -10,7 +10,7 @@
       "type": "node",
       "request": "launch",
       "name": "Launch Program",
-      "program": "${workspaceFolder}/1162. As Far from Land As Possible.js"
+      "program": "${workspaceFolder}/923.3-sum-with-multiplicity.js"
     }
   ]
 }
