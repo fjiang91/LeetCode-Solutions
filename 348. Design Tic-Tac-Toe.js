@@ -1,6 +1,6 @@
 //Design a Tic Tac Toe on a n x n matrix board
 
-//Faster Approach - Code Aspiration from bdwalker
+//Faster Approach - Code Aspiration from bdwalker on LeetCode
 //O(1) time complexity - to check winner
 //O(n) space complexity - to store additional
 //Use a row and col array to keep track of the num within the index
