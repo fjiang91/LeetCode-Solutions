@@ -14,9 +14,17 @@
  * @param {TreeNode} root
  * @return {number[]}
  */
-//O(n) - time complexity - visit each node once
-//O(n) - space complexitiy - for queue and rightView arr
-//Iterative Approach - BFS - Keep track of the most right when size is 0, then we're at the end of our level
+
+ /*
+* O(n) -> Time Complexity -> visit each node once
+* O(n) -> Space Complexity -> Arr to keep sum at each level
+* Approach -> DFS and keep a sum for each level. Return the maxSum's level
+* Edge Case / Questions to Ask
+* 1. What if the tree be empty?
+* 2. Will there be negative values?
+* 3. Will there be multiple levels with the same sum?
+*/
+
 var rightSideView = function(root) {
   if(!root) return [];
   let rightView = [];
