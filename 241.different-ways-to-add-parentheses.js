@@ -48,7 +48,6 @@ switch(op){
     case "*": return num1 * num2; break;
     default: return;
 }
-
-return;
 };
 
+module.exports = diffWaysToCompute

@@ -1,0 +1,23 @@
+{
+  "name": "leetcoderepo",
+  "version": "1.0.0",
+  "description": "Feng Jiang's Repo with Java and JavaScript for LeetCode. Hoping to update this Repo with solutions to LeetCode Problems on a daily basis for practice purposes.",
+  "main": "",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fjiang91/LeetCode-Solutions.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fjiang91/LeetCode-Solutions/issues"
+  },
+  "homepage": "https://github.com/fjiang91/LeetCode-Solutions#readme",
+  "devDependencies": {
+    "install": "^0.13.0",
+    "jest": "^24.9.0"
+  }
+}
