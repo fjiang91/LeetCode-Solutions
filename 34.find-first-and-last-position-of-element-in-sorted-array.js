@@ -13,37 +13,38 @@
 //One scan to the left to find the left most
 //One scan to the right to find the right most
 var searchRange = function(nums, target) {
-  let start = 0;
-  let end = nums.length - 1;
-  let leftMost = -1;
-  let rightMost = -1;
-  //Search Left and narrow down the result with a >= than target [6,7,7,7,7] => >= will decrease the end index --> [6,7]
-  while(start <= end){
-      let mid = Math.floor( start + (end - start) /2 );
-      if (nums[mid] === target) {
-          leftMost = mid;
-      }
-      if (nums[mid] >= target) {
-          end = mid - 1;
-      } else {
-          start = mid + 1;
-      }
-  }
+    let leftP = -1;
+    let rightP = -1;
 
-  start = 0;
-  end = nums.length - 1;
-  //Search Right and narrow down the result with a > than target, [6,7,7,7,7], > will increase mid to go right --> [7,7] -> since 7 is not greater than 7 -> start = mid + 1
-  while(start <= end){
-      let mid = Math.floor( start + (end - start) /2 );
-      if (nums[mid] === target) {
-          rightMost = mid;
-      }
-      if (nums[mid] > target) {
-          end = mid - 1;
-      } else {
-          start = mid + 1;
-      }
-  }
-  return [leftMost,rightMost]
+    let left = 0;
+    let right = nums.length - 1;
+
+    //Search Left
+    while(left <= right) {
+        let mid = Math.floor((left + right) / 2);
+        if ( nums[mid] === target || nums[mid] > target) {
+            if (nums[mid] === target) leftP = mid;
+            right = mid - 1;
+        } else {
+            left = mid + 1;
+        }
+    }
+
+    left = 0;
+    right = nums.length - 1;
+    //Search Right
+    while (left <= right) {
+        let mid = Math.floor((left + right) / 2);
+        if (nums[mid] <= target) {
+            if (nums[mid] === target) rightP = mid;
+            left = mid + 1;
+        } else {
+            right = mid - 1;
+        }
+    }
+
+    return [leftP, rightP];
 };
+
+module.exports = searchRange;
 
